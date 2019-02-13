@@ -4,7 +4,7 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.util.Scanner;
 
-public class Main {
+public class ClientUDP {
     public static void main( String[] args )
     {
         InetAddress addr;
@@ -21,6 +21,8 @@ public class Main {
 
             //byte[] buffer = new byte[100];
             DatagramSocket ds = new DatagramSocket();
+
+            System.out.println("client ok");
 
             Scanner input = new Scanner(System.in);
             String line;
